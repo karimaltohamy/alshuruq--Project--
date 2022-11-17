@@ -1,0 +1,9 @@
+.section-boxs-portfolio {
+  padding: 50px 0;
+}
+.section-boxs-portfolio .boxs-portfolio {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 25px;
+}

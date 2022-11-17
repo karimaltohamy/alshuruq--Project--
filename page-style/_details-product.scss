@@ -1,0 +1,180 @@
+/* Start Head Details Product */
+.head-details-product {
+    padding-top: 120px;
+
+    .navbar {
+        box-shadow: 0 0 10px 0 rgba(153, 153, 153, 0.563);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+        background-color: #FFF;
+        border-bottom: 3px solid #ffa600fe;
+
+        .main-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+
+            .icon-menu {
+                display: none;
+                img {
+                    width: 50px;
+                }
+            }
+
+            ul {
+                display: flex;
+                align-items: center;
+                gap: 40px;  
+                margin: 0;
+                padding: 0;
+
+                a {
+                    color: #000;
+                    font-size: 20px;
+                }
+            }
+
+            .img-head {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                direction: ltr;
+                .img-logo {
+                    img {
+                        width: 130px;
+                    }
+                }
+
+                .markt-icon {
+                    img {
+                        width: 40px;
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .head-details-product {
+        .icon-menu {
+            display: block !important;
+        }
+
+        .navbar {
+            ul {
+                position: fixed;
+                flex-direction: column;
+                left: -100%;
+                top: 0;
+                background-color: #FFF;
+                width: 40%;
+                height: 100vh;
+                justify-content: center;
+                box-shadow: 0 0 10px 0 rgba(153, 153, 153, 0.65);
+                transition: all .4s;
+            }
+        }
+    }
+}
+/* End Head Details Product */
+
+/* Start Content Details Product */
+.content-details-product {
+    padding-bottom: 50px;
+    .main-container {
+        h2 {
+            text-align: center;
+            color: #ffa600fe;
+            font-size: 35px;
+        }
+
+        .box-product {
+            display: flex;
+            gap: 20px;
+            box-shadow: 0 0 10px 0 rgba(153, 153, 153, 0.573);
+            padding: 30px;
+            border-radius: 15px;
+
+            .img {
+                img {
+                    width: 300px;
+                }
+            }
+
+            .info {
+                flex: 1;
+
+                h3 {
+                    font-size: 23px;
+                    margin-bottom: 0;
+                    color: #ffa600fe;
+                }
+
+                .desc {
+                    font-size: 21px;
+                    color: rgb(109, 109, 109);
+                }
+
+                >div {
+                    h4 {
+                        font-size: 23px;
+                        color: #ffa600fe;
+                        margin-bottom: 13px;
+                    }
+
+                    .row {
+                        display: flex;
+                        align-items: center;
+                        gap: 25px;
+                        width: 400px;
+
+                        p {
+                            width: 200px;
+                            font-size: 19px;
+                            margin: 15px 0;
+                        }
+
+                        span {
+                            font-size: 18px;
+                            color: rgb(94, 94, 94);
+                        }
+                    }
+                }
+            }
+        }
+
+        
+    }
+}
+/* End Content Details Product */
+
+
+@media (max-width: 991px) {
+    .content-details-product {
+        .box-product {
+            flex-direction: column;
+
+            .img {
+                text-align: center;
+            }
+
+            .info {
+                >div {
+                    .row {
+                        width: auto !important;
+
+                        p {
+                            width: 110px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

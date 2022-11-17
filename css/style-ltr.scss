@@ -1,0 +1,221 @@
+@use "../page-style/rules";
+
+@use "../page-style/home";
+
+@use "../page-style/we-are";
+
+@use "../page-style/dtergents";
+
+@use "../page-style/pesticides";
+
+@use "../page-style/contact-us";
+
+@use "../page-style/market";
+
+@use "../page-style/details-product";
+
+/* Start Home Page */
+.header-home {
+    .login-sec {
+        .lang {
+            .info-lang {
+                left: auto !important;
+                right: 0;
+            }
+        }
+    }
+
+    .nav-links {
+        .main-logo {
+            direction: rtl !important;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .nav-links {
+        ul {
+            &.open {
+                right: 0 !important;
+            }
+
+            left: auto !important;
+            right: -100%;
+        }
+    }
+}
+
+
+/* End Home Page */
+
+/* Start We Are Page */
+.head-we-are {
+    .img-head {
+        direction: rtl !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .head-we-are {
+        .navbar {
+            ul {
+                &.open {
+                    right: 0 !important;
+                }
+
+                left: auto !important;
+                right: -100%;
+            }
+        }
+    }
+}
+/* End We Are Page */
+
+/* Start Dtergents Page */
+.head-dtergents {
+    .img-head {
+        direction: rtl !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .head-dtergents {
+        .navbar {
+            ul {
+                &.open {
+                    right: 0 !important;
+                }
+                
+                left: auto !important;
+                right: -100%;
+            }
+        }
+    }
+}
+/* End Dtergents Page */
+
+/* Start Pesticides Page */
+.head-pesticides {
+    .img-head {
+        direction: rtl !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .head-pesticides {
+        .navbar {
+            ul {
+                &.open {
+                    right: 0 !important;
+                }
+                
+                left: auto !important;
+                right: -100%;
+            }
+        }
+    }
+}
+/* End Pesticides Page */
+
+/* Start Contact Us Page */
+.head-contact-us {
+    .img-head {
+        direction: rtl !important;
+    }
+}
+
+.contact-us {
+    .row1 {
+        h1 {
+            &::after {
+                right: auto !important;
+                left: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .head-contact-us {
+        .navbar {
+            ul {
+                &.open {
+                    right: 0 !important;
+                }
+                
+                left: auto !important;
+                right: -100%;
+            }
+        }
+    }
+}
+/* End Contact Us Page */
+
+/* Start Market Page */
+.head-market-page {
+    .img-head {
+        direction: rtl !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .head-market-page {
+        .navbar {
+            ul {
+                &.open {
+                    right: 0 !important;
+                }
+                
+                left: auto !important;
+                right: -100%;
+            }
+        }
+    }
+}
+/* End Market Page */
+
+/* Start Market Page */
+.head-market-page {
+    .img-head {
+        direction: rtl !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .head-market-page {
+        .navbar {
+            ul {
+                &.open {
+                    right: 0 !important;
+                }
+                
+                left: auto !important;
+                right: -100%;
+            }
+        }
+    }
+}
+/* End Market Page */
+
+/* Start Details Product Page */
+.head-details-product {
+    .img-head {
+        direction: rtl !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .head-details-product {
+        .navbar {
+            ul {
+                &.open {
+                    right: 0 !important;
+                }
+                
+                left: auto !important;
+                right: -100%;
+            }
+        }
+    }
+}
+/* End Details Product Page */
