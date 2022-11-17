@@ -286,15 +286,21 @@ body {
 
 @media (max-width: 991px) {
   .header-home .nav-links ul {
-    gap: 35px !important;
+    gap: 35px;
   }
   .nav-links .main-container .main-logo .markt-icon {
     display: none;
   }
 }
 @media (max-width: 767px) {
+  .header-home {
+    padding: 7px 0 !important;
+  }
   .header-home .icon-menu {
     display: block !important;
+  }
+  .header-home .icon-menu img {
+    width: 40px !important;
   }
   .header-home .nav-links .main-container {
     -webkit-box-align: initial !important;
@@ -325,18 +331,30 @@ body {
             justify-content: center;
     -webkit-transition: all 0.6s;
     transition: all 0.6s;
+    text-align: center;
+    gap: 10px !important;
   }
   .header-home ul li {
-    margin-bottom: 20px;
+    margin-bottom: 10px !important;
+    font-size: 17px;
   }
   .header-home ul .markt {
     display: block !important;
   }
+  .header-home .main-logo img {
+    width: 95px !important;
+  }
   .header-home .active-link {
-    color: #FFF !important;
+    color: black !important;
   }
   .header-home .head-contact {
-    padding: 20px 10px;
+    padding: 12px 0 8px;
+  }
+  .header-home .head-contact .contact-sec img {
+    width: 18px !important;
+  }
+  .header-home .head-contact .contact-sec span {
+    font-size: 14px;
   }
   .header-home .contact-sec {
     -webkit-box-orient: vertical;
@@ -355,10 +373,15 @@ body {
             flex-direction: column;
   }
   .header-home .welcome {
-    margin-top: 40px;
+    margin-top: 30px;
   }
   .header-home .welcome p {
-    font-size: 28px !important;
+    font-size: 23px !important;
+    margin: 0;
+  }
+  .header-home .welcome a {
+    padding: 12px !important;
+    font-size: 17px !important;
   }
   .open {
     left: 0 !important;
@@ -432,6 +455,34 @@ body {
   font-size: 18px;
 }
 
+@media (max-width: 767px) {
+  .features {
+    padding-top: 25px !important;
+    padding-bottom: 40px !important;
+  }
+  .features h2 {
+    font-size: 30px !important;
+  }
+  .features .box-feat {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    margin-top: 25px;
+    gap: 20px !important;
+  }
+  .features .box-feat .box {
+    padding: 15px !important;
+    min-height: 150px !important;
+  }
+  .features .box-feat .box img {
+    width: 40px;
+  }
+  .features .box-feat .box p {
+    margin-top: 7px;
+    font-size: 18px;
+  }
+  .features .box-feat .box span {
+    font-size: 16px !important;
+  }
+}
 /* End Features */
 /* Start Services */
 .services {
@@ -507,6 +558,30 @@ body {
   margin: 0;
 }
 
+@media (max-width: 767px) {
+  .services {
+    padding-bottom: 45px !important;
+  }
+  .services h2 {
+    font-size: 30px !important;
+  }
+  .services .services-box {
+    margin-top: 30px !important;
+  }
+  .services .services-box .box {
+    min-height: 240px !important;
+  }
+  .services .services-box .box .img-box img {
+    width: 230px !important;
+    height: 190px !important;
+  }
+  .services .services-box .box .info {
+    padding: 5px !important;
+  }
+  .services .services-box .box .info p {
+    font-size: 20px !important;
+  }
+}
 /* End Services */
 /* Start Reviews */
 .reviews {
@@ -558,7 +633,7 @@ body {
 }
 .reviews .main-container .reviews-box .box {
   position: relative;
-  width: 350px;
+  width: 100%;
   height: 300px;
   -webkit-transition: -webkit-transform 0.8s;
   transition: -webkit-transform 0.8s;
@@ -643,14 +718,44 @@ body {
   transition: 0.4s;
 }
 
-@media (max-width: 767px) {
-  .reviews .reviews-box .box {
-    width: 320px !important;
-  }
-}
 @media (max-width: 991px) {
   .reviews .reviews-box {
     grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)) !important;
+  }
+}
+@media (max-width: 767px) {
+  .reviews {
+    margin-top: 40px !important;
+  }
+  .reviews h2 {
+    font-size: 30px !important;
+  }
+  .reviews .reviews-box {
+    margin-top: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)) !important;
+  }
+  .reviews .reviews-box .box {
+    height: 250px !important;
+  }
+  .reviews .reviews-box .box .img-custom img {
+    width: 85px !important;
+    height: 85px !important;
+  }
+  .reviews .reviews-box .box .img-custom .time {
+    font-size: 13px !important;
+  }
+  .reviews .reviews-box .box .info-custom {
+    padding-top: 5px !important;
+  }
+  .reviews .reviews-box .box .info-custom p {
+    margin-bottom: 6px !important;
+    font-size: 20px !important;
+  }
+  .reviews .reviews-box .box .info-custom span {
+    font-size: 18px !important;
+  }
+  .reviews .reviews-box .box .review p {
+    font-size: 17px;
   }
 }
 /* End Reviews */

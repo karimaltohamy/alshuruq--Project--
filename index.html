@@ -160,7 +160,7 @@
 
                     <div class="box">
                         <div class="img-box">
-                            <img src="images/img4.jpg" alt="img">
+                            <img src="images/club1.jpg" alt="img">
                         </div>
 
                         <div class="info">
@@ -170,7 +170,7 @@
 
                     <div class="box">
                         <div class="img-box">
-                            <img src="images/img3.jpg" alt="img">
+                            <img src="images/hotel3.jpg" alt="img">
                         </div>
 
                         <div class="info">
@@ -381,6 +381,18 @@
             btnMenu.addEventListener("click", () => {
                 menu.classList.toggle("open")
             })
+
+            // document.body.addEventListener("click", () => {
+            //     if (menu.classList.contains("open")) {
+            //         menu.classList.remove("open")
+            //     }else {
+            //         return null
+            //     }
+            // })
+
+            document.querySelector(".icon").onclick = () => {
+                document.querySelector(".info-lang").classList.toggle("open-lang")
+            }
 
             document.querySelector(".icon").onclick = () => {
                 document.querySelector(".info-lang").classList.toggle("open-lang")

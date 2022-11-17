@@ -204,7 +204,7 @@
     .header-home {
         .nav-links {
             ul {
-                gap: 35px !important;
+                gap: 35px;
             }
         }
     }
@@ -222,8 +222,14 @@
 
 @media (max-width: 767px) {
     .header-home {
+        padding: 7px 0 !important;
+
         .icon-menu {
             display: block !important;
+
+            img {
+                width: 40px !important;
+            }
         }
 
         .nav-links {
@@ -251,9 +257,12 @@
             z-index: 9999;
             justify-content: center;
             transition: all .6s;
+            text-align: center;
+            gap: 10px !important;
 
             li {
-                margin-bottom: 20px;
+                margin-bottom: 10px !important;
+                font-size: 17px;
             }
 
             .markt {
@@ -261,12 +270,29 @@
             }
         }
 
+        .main-logo {
+            img {
+                width: 95px !important;
+            }
+            
+        }
+
         .active-link {
-            color: #FFF !important;
+            color: black !important;
         }
 
         .head-contact {
-            padding: 20px 10px;
+            padding: 12px 0 8px;
+
+            .contact-sec {
+                img {
+                    width: 18px !important;
+                }
+
+                span {
+                    font-size: 14px;
+                }
+            }
         }
 
         .contact-sec {
@@ -280,10 +306,16 @@
         }
 
         .welcome {
-            margin-top: 40px;
+            margin-top: 30px;
 
             p {
-                font-size: 28px !important;
+                font-size: 23px !important;
+                margin: 0;
+            }
+
+            a {
+                padding: 12px !important;
+                font-size: 17px !important;
             }
         }
     }
@@ -291,6 +323,7 @@
     .open {
         left: 0 !important;
     }
+
 }
 /* End Header Home */
 
@@ -359,6 +392,41 @@
                 span {
                     color: rgb(101, 101, 101);
                     font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:767px) {
+    .features {
+        padding-top: 25px !important;
+        padding-bottom: 40px !important;
+
+        h2 {
+            font-size: 30px !important;
+        }
+
+        .box-feat {
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            margin-top: 25px;
+            gap: 20px !important;
+
+            .box {
+                padding: 15px !important;
+                min-height: 150px !important;
+
+                img {
+                    width: 40px;
+                }
+
+                p {
+                    margin-top: 7px;
+                    font-size: 18px;
+                }
+
+                span {
+                    font-size: 16px !important;
                 }
             }
         }
@@ -441,6 +509,38 @@
         }
     }
 }
+
+@media(max-width: 767px) {
+    .services {
+        padding-bottom: 45px !important;
+
+        h2 {
+            font-size: 30px !important;
+        }
+
+        .services-box {
+            margin-top: 30px !important;
+            .box {
+                min-height: 240px !important;
+
+                .img-box {
+                    img {
+                        width: 230px !important;
+                        height: 190px !important;
+                    }
+                }
+
+                .info {
+                        padding: 5px !important;
+                    
+                    p {
+                        font-size: 20px !important;
+                    }
+                }
+            }
+        }
+    }
+}
 /* End Services */
 
 /* Start Reviews */
@@ -489,7 +589,7 @@
 
             .box {
                 position: relative;
-                width: 350px;
+                width: 100%;
                 height: 300px;
                 transition: transform .8s;
                 margin: auto;
@@ -576,16 +676,6 @@
     }
 }
 
-@media (max-width: 767px) {
-    .reviews {
-        .reviews-box {
-            .box {
-                width: 320px !important;
-            }
-        }
-    }
-}
-
 @media (max-width: 991px) {
     .reviews {
         .reviews-box {
@@ -593,6 +683,56 @@
         }
     }
 } 
+
+@media (max-width: 767px) {
+    .reviews {
+        margin-top: 40px !important;
+
+        h2 {
+            font-size: 30px !important;
+        }
+
+        .reviews-box {
+            margin-top: 30px;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)) !important;
+
+            .box {
+                height: 250px !important;
+                .img-custom {
+                    img {
+                        width: 85px !important;
+                        height: 85px !important;
+                    }
+
+                    .time {
+                        font-size: 13px !important;
+                    }
+                }
+
+                .info-custom {
+                    padding-top: 5px !important;
+
+                    p {
+                        margin-bottom: 6px !important;
+                        font-size: 20px !important;
+                    }
+
+                    span {
+                        font-size: 18px !important;
+                    }
+                }
+
+                .review {
+                    p {
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
 /* End Reviews */
 
 /* Start Footer */
