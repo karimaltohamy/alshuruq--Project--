@@ -2500,8 +2500,64 @@ body {
     width: 110px !important;
   }
 }
+.boxs-services {
+  margin: 150px 0 0;
+  background-color: rgba(255, 166, 0, 0.9960784314);
+  padding: 40px 0;
+}
+.boxs-services .content-boxs {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+}
+.boxs-services .content-boxs .box-services {
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.boxs-services .content-boxs .box-services .icon-box {
+  text-align: center;
+  width: 55px;
+  height: 55px;
+  border: 2px solid rgba(255, 166, 0, 0.9960784314);
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.boxs-services .content-boxs .box-services .icon-box i {
+  color: rgba(255, 166, 0, 0.9960784314);
+  font-size: 25px;
+}
+.boxs-services .content-boxs .box-services .title-box {
+  margin: 10px 0;
+  font-size: 23px;
+}
+.boxs-services .content-boxs .box-services .p-box {
+  margin: 0;
+  text-align: center;
+  color: #5b5b5b;
+}
+
 .section-boxs-portfolio {
-  padding: 150px 0;
+  padding: 50px 0;
 }
 .section-boxs-portfolio .main-title-portfolio {
   font-size: 50px;
@@ -2551,25 +2607,15 @@ body {
   transition: all 0.4s;
   -webkit-box-shadow: 1px 4px 12px #a5a5a5;
           box-shadow: 1px 4px 12px #a5a5a5;
+  padding: 20px;
 }
 .section-boxs-portfolio .boxs-portfolio .box-portfolio:hover {
   -webkit-transform: translateY(-15px);
           transform: translateY(-15px);
 }
 .section-boxs-portfolio .boxs-portfolio .box-portfolio .img-box-portfolio {
-  height: 250px;
+  height: 100%;
   width: 100%;
-}
-.section-boxs-portfolio .boxs-portfolio .box-portfolio .content-box {
-  margin: 15px 0;
-}
-.section-boxs-portfolio .boxs-portfolio .box-portfolio .content-box .title-box {
-  font-size: 26px;
-  margin: 0 10px;
-}
-.section-boxs-portfolio .boxs-portfolio .box-portfolio .content-box .sub-title-box {
-  margin: 0 10px;
-  color: #5b5b5b;
 }
 
 .section-services {
@@ -2614,6 +2660,32 @@ body {
   }
 }
 @media (max-width: 700px) {
+  .boxs-services {
+    margin: 60px 0 0;
+    background-color: rgba(255, 166, 0, 0.9960784314);
+    padding: 20px 0;
+  }
+  .boxs-services .content-boxs {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 25px;
+  }
+  .boxs-services .content-boxs .box-services {
+    padding: 10px 15px !important;
+  }
+  .boxs-services .content-boxs .box-services .icon-box {
+    width: 40px !important;
+    height: 40px !important;
+  }
+  .boxs-services .content-boxs .box-services .icon-box i {
+    font-size: 18px !important;
+  }
+  .boxs-services .content-boxs .box-services .title-box {
+    margin: 5px 0 !important;
+    font-size: 19px !important;
+  }
+  .boxs-services .content-boxs .box-services .p-box {
+    font-size: 13px;
+  }
   .section-boxs-portfolio {
     padding: 115px 0 30px;
   }
@@ -2624,22 +2696,14 @@ body {
     -ms-grid-columns: minmax(160px, 1fr) 15px minmax(160px, 1fr);
     grid-template-columns: repeat(2, minmax(160px, 1fr));
     gap: 15px;
+    padding: 8px !important;
   }
   .section-boxs-portfolio .boxs-portfolio:hover {
     -webkit-transform: translateY(-8px);
             transform: translateY(-8px);
   }
-  .section-boxs-portfolio .boxs-portfolio .img-box-portfolio {
-    height: 160px !important;
-  }
-  .section-boxs-portfolio .boxs-portfolio .content-box {
-    margin: 5px 0 10px !important;
-  }
-  .section-boxs-portfolio .boxs-portfolio .content-box .title-box {
-    font-size: 20px !important;
-  }
-  .section-boxs-portfolio .boxs-portfolio .content-box .sub-title-box {
-    font-size: 13px !important;
+  .section-boxs-portfolio .boxs-portfolio .box-portfolio {
+    padding: 10px;
   }
   .section-services {
     padding: 20px 0;
