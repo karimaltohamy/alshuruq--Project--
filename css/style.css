@@ -45,7 +45,7 @@ body {
 /* Large */
 @media (min-width: 1200px) {
   .main-container {
-    width: 1170px;
+    width: 1300px;
   }
 }
 ::-webkit-scrollbar {
@@ -243,7 +243,7 @@ body {
 .header-home .nav-links .main-container ul li a {
   color: #FFF;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
 }
 .header-home .nav-links .main-container ul .markt {
   display: none;
@@ -518,7 +518,7 @@ body {
 }
 .features .main-container .box-feat {
   margin-top: 50px;
-  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   display: -ms-grid;
   display: grid;
   gap: 35px;
@@ -2396,7 +2396,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding: 15px;
-  width: 100%;
 }
 .head-second .navbar .main-container .icon-menu {
   display: none;
@@ -2414,7 +2413,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 40px;
+  gap: 20px;
   margin: 0;
   text-align: center;
   padding: 0 10px;

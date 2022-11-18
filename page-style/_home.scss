@@ -152,7 +152,7 @@
                     a {
                         color: #FFF;
                         font-size: 16px;
-                        font-weight: 500;
+                        font-weight: 600;
                     }
                 }
 
@@ -455,7 +455,7 @@
 
         .box-feat {
             margin-top: 50px;
-            grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             display: grid;
             gap: 35px;
 
