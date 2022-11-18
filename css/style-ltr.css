@@ -122,20 +122,6 @@ body {
           align-items: center;
   gap: 7px;
 }
-.header-home .head-contact .main-container .login-sec {
-  color: #FFF;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 12px;
-}
-.header-home .head-contact .main-container .login-sec .login a {
-  color: #FFF;
-  font-size: 18px;
-}
 .header-home .head-contact .main-container .login-sec .lang {
   cursor: pointer;
   position: relative;
@@ -200,13 +186,22 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .header-home .nav-links .main-container .icon-menu {
   display: none;
 }
 .header-home .nav-links .main-container .icon-menu img {
-  width: 60px;
+  width: 45px;
   cursor: pointer;
+}
+.header-home .nav-links .main-container .head-menu {
+  display: none;
+}
+.header-home .nav-links .main-container .login {
+  display: none;
 }
 .header-home .nav-links .main-container ul {
   padding: 0;
@@ -217,20 +212,21 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 60px;
+  gap: 30px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
 .header-home .nav-links .main-container ul li a {
   color: #FFF;
-  font-size: 20px;
+  font-size: 16px;
+  font-weight: 500;
 }
 .header-home .nav-links .main-container ul .markt {
   display: none;
 }
 .header-home .nav-links .main-container ul .markt a img {
-  width: 40px;
+  width: 30px;
 }
 .header-home .nav-links .main-container .main-logo {
   display: -webkit-box;
@@ -243,7 +239,7 @@ body {
   direction: ltr;
 }
 .header-home .nav-links .main-container .main-logo .logo-site {
-  width: 150px;
+  width: 130px;
 }
 .header-home .nav-links .main-container .main-logo .markt-icon {
   width: 40px;
@@ -285,7 +281,7 @@ body {
 }
 
 @media (max-width: 991px) {
-  .header-home .nav-links ul {
+  .header-home .nav-links .menu {
     gap: 35px;
   }
   .nav-links .main-container .main-logo .markt-icon {
@@ -314,38 +310,100 @@ body {
   .header-home .nav-links .main-container .main-logo .logo-site {
     width: 125px;
   }
-  .header-home ul {
+  .header-home .menu {
     position: fixed;
+    left: -100%;
+    top: 0px;
+    background-color: white;
+    height: 100vh;
+    width: 80%;
+    z-index: 9999;
+    -webkit-transition: all 0.6s;
+    transition: all 0.6s;
+    gap: 10px !important;
+  }
+  .header-home .menu .head-menu {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px 20px 0;
+    border-bottom: 2px solid rgba(255, 166, 0, 0.9960784314);
+    height: 60px;
+  }
+  .header-home .menu .head-menu h3 {
+    font-size: 21px;
+  }
+  .header-home .menu .head-menu span svg {
+    width: 30px;
+  }
+  .header-home .menu ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    left: -100%;
-    top: 0px;
-    background-color: rgba(255, 166, 0, 0.9960784314);
-    height: 100vh;
-    width: 40%;
-    z-index: 9999;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-transition: all 0.6s;
-    transition: all 0.6s;
-    text-align: center;
-    gap: 10px !important;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    text-align: right;
+    height: 85%;
+    padding: 35px 0 0 0;
+    gap: 0 !important;
   }
-  .header-home ul li {
-    margin-bottom: 10px !important;
-    font-size: 17px;
+  .header-home .menu ul li {
+    border-bottom: 1px solid silver;
+    width: 100%;
+    padding: 20px 25px;
+    cursor: pointer;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    font-family: 500;
   }
-  .header-home ul .markt {
+  .header-home .menu ul li a {
+    color: black !important;
+  }
+  .header-home .menu ul li:hover {
+    padding: 10px 30px;
+    background-color: rgb(223, 223, 223);
+  }
+  .header-home .menu ul li:hover a {
+    color: rgba(255, 166, 0, 0.9960784314);
+  }
+  .header-home .menu .login {
+    display: block !important;
+    padding-bottom: 15px;
+  }
+  .header-home .menu .login a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 13px;
+    padding: 10px 25px;
+    color: black;
+    border-top: 1px solid rgb(223, 223, 223);
+  }
+  .header-home .menu .login a span {
+    font-size: 21px;
+  }
+  .header-home .menu .login a svg {
+    width: 28px;
+  }
+  .header-home .menu .markt {
     display: block !important;
   }
   .header-home .main-logo img {
     width: 95px !important;
   }
   .header-home .active-link {
-    color: black !important;
+    color: rgba(255, 166, 0, 0.9960784314);
   }
   .header-home .head-contact {
     padding: 12px 0 8px;
@@ -1171,6 +1229,52 @@ body {
 
 /* End Products */
 @media (max-width: 600px) {
+  .sec-products-dtergents {
+    padding: 110px 0 100px 0 !important;
+  }
+  .sec-products-dtergents .main-container {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
+  .sec-products-dtergents .main-container .search input[type=text] {
+    padding: 5px !important;
+    font-size: 16px !important;
+  }
+  .sec-products-dtergents .main-container .search input[type=button] {
+    padding: 6px 17px !important;
+    font-size: 16px !important;
+  }
+  .sec-products-dtergents .products-box {
+    -ms-grid-columns: 1fr 15px 1fr !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 15px;
+    margin-top: 25px !important;
+  }
+  .sec-products-dtergents .products-box .box {
+    padding: 10px !important;
+    min-height: 250px !important;
+  }
+  .sec-products-dtergents .products-box .box .img img {
+    height: 100px !important;
+  }
+  .sec-products-dtergents .products-box .box > p {
+    font-size: 19px;
+    margin: 5px 0;
+  }
+  .sec-products-dtergents .products-box .box .info {
+    gap: 10px !important;
+  }
+  .sec-products-dtergents .products-box .box .info p {
+    font-size: 14px;
+  }
+  .sec-products-dtergents .products-box .box .info span {
+    font-size: 14px;
+  }
+  .sec-products-dtergents .products-box .box .info button {
+    width: 100% !important;
+    padding: 6px !important;
+    font-size: 16px;
+  }
   .footer {
     padding: 8px !important;
   }

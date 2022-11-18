@@ -112,7 +112,68 @@
 /* End Products */
 
 @media (max-width: 600px) {
-   
+    .sec-products-dtergents {
+        padding: 110px 0 100px 0 !important;
+
+        .main-container {
+            padding-left: 8px !important;
+            padding-right: 8px !important; 
+
+            .search {
+                input[type=text] {
+                    padding: 5px !important;
+                    font-size: 16px !important;
+                }
+
+                input[type=button] {
+                    padding: 6px 17px !important;
+                    font-size: 16px !important;
+                }
+            }
+    
+        }
+
+        
+        .products-box {
+            grid-template-columns: repeat(2, 1fr) !important;
+            gap: 15px;
+            margin-top: 25px !important;
+
+            .box {
+                padding: 10px !important;
+                min-height: 250px !important;
+
+                .img {
+                    img {
+                        height: 100px !important;
+                    }
+                }
+
+                > p {
+                    font-size: 19px;
+                    margin: 5px 0;
+                }
+
+                .info {
+                    gap: 10px !important;
+
+                    p {
+                        font-size: 14px;
+                    }
+
+                    span {
+                        font-size: 14px;
+                    }
+                    
+                    button {
+                        width: 100% !important;
+                        padding: 6px !important;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
 
     .footer {
         padding: 8px !important;
