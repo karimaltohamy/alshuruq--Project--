@@ -321,6 +321,7 @@ body {
     -webkit-transition: all 0.6s;
     transition: all 0.6s;
     gap: 10px !important;
+    border-right: 2px solid rgba(255, 166, 0, 0.9960784314);
   }
   .header-home .menu .head-menu {
     display: -webkit-box !important;
@@ -332,15 +333,15 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 10px 20px 0;
+    padding: 5px 20px 0;
     border-bottom: 2px solid rgba(255, 166, 0, 0.9960784314);
-    height: 60px;
+    height: 40px;
   }
   .header-home .menu .head-menu h3 {
     font-size: 21px;
   }
   .header-home .menu .head-menu span svg {
-    width: 30px;
+    width: 25px;
   }
   .header-home .menu ul {
     -webkit-box-orient: vertical;
@@ -351,18 +352,18 @@ body {
         -ms-flex-align: start;
             align-items: flex-start;
     text-align: right;
-    height: 85%;
+    height: 75%;
     padding: 35px 0 0 0;
     gap: 0 !important;
   }
   .header-home .menu ul li {
     border-bottom: 1px solid silver;
     width: 100%;
-    padding: 20px 25px;
+    padding: 12px 20px;
     cursor: pointer;
     -webkit-transition: all 0.4s;
     transition: all 0.4s;
-    font-family: 500;
+    font-weight: 500;
   }
   .header-home .menu ul li a {
     color: black !important;
@@ -391,10 +392,10 @@ body {
     border-top: 1px solid rgb(223, 223, 223);
   }
   .header-home .menu .login a span {
-    font-size: 21px;
+    font-size: 19px;
   }
   .header-home .menu .login a svg {
-    width: 28px;
+    width: 25px;
   }
   .header-home .menu .markt {
     display: block !important;
