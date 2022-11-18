@@ -273,9 +273,14 @@
     <script>
         let btnMenu = document.querySelector(".icon-menu");
         let menu = document.querySelector(".menu");
+        let close = document.querySelector(".close")
 
         btnMenu.addEventListener("click", () => {
             menu.classList.toggle("open")
+        })
+
+        close.addEventListener("click", () => {
+            menu.classList.remove("open")
         })
     </script>
     

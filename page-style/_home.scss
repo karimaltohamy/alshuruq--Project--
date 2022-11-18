@@ -64,10 +64,10 @@
                     .info-lang {
                         position: absolute;
                         z-index: 3333;
-                        left: -9999px;
+                        left:0;
                         bottom: -126px;;
                         background-color: orange;
-                        // display: none;
+                        display: none;
                         flex-direction: column;
                         gap: 20px;
                         padding: 10px;
@@ -79,7 +79,7 @@
                         font-weight: bold;
                         
                         &.open-lang {
-                            left: 0;
+                            display: block;
                         }
 
                         p {

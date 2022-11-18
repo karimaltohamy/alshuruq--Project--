@@ -142,9 +142,10 @@ body {
 .header-home .head-contact .main-container .login-sec .lang .info-lang {
   position: absolute;
   z-index: 3333;
-  left: -9999px;
+  left: 0;
   bottom: -126px;
   background-color: orange;
+  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -164,7 +165,7 @@ body {
   font-weight: bold;
 }
 .header-home .head-contact .main-container .login-sec .lang .info-lang.open-lang {
-  left: 0;
+  display: block;
 }
 .header-home .head-contact .main-container .login-sec .lang .info-lang p {
   margin: 0;
