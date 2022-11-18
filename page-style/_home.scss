@@ -64,19 +64,22 @@
                     .info-lang {
                         position: absolute;
                         z-index: 3333;
-                        left: 0;
-                        bottom: -118px;
+                        left: -9999px;
+                        bottom: -126px;;
                         background-color: orange;
-                        display: none;
+                        // display: none;
                         flex-direction: column;
                         gap: 20px;
-                        padding: 15px;
+                        padding: 10px;
+                        width: 140px;
+                        align-items: center;
+                        justify-content: center;
                         border-radius: 0 0 10px 10px;
-                        transition: all .3s;
+                        transition: all .5s;
                         font-weight: bold;
                         
                         &.open-lang {
-                            display: flex !important;
+                            left: 0;
                         }
 
                         p {
@@ -85,10 +88,16 @@
                             align-items: center;
                             gap: 10px;
                             cursor: pointer;
+                            width: 100%;
+                            justify-content: center;
+                            border: 1px solid black;
+                            padding: 5px;
+                            border-radius: 5px;
+                            margin-bottom: 8px;
                         }
 
                         img {
-                            width: 15px;
+                            width: 20px;
                         }
                     }
                 }
