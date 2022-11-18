@@ -46,6 +46,13 @@
             }
 
             .login-sec {
+                display: flex;
+                gap: 20px;
+
+                a {
+                    font-size: 17px;
+                    color: white;
+                }
            
                 .lang {
                     cursor: pointer;
@@ -378,6 +385,10 @@
 
         .login-sec {
             flex-direction: column;
+
+            a {
+                display: none;
+            }
         }
 
         .welcome {

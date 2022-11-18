@@ -123,6 +123,16 @@ body {
           align-items: center;
   gap: 7px;
 }
+.header-home .head-contact .main-container .login-sec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+.header-home .head-contact .main-container .login-sec a {
+  font-size: 17px;
+  color: white;
+}
 .header-home .head-contact .main-container .login-sec .lang {
   cursor: pointer;
   position: relative;
@@ -444,6 +454,9 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .header-home .login-sec a {
+    display: none;
   }
   .header-home .welcome {
     margin-top: 30px;
