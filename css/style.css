@@ -2519,7 +2519,7 @@ body {
     font-size: 50px;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 767px) {
   .head-second {
     height: 275px;
     padding-top: 60px !important;
@@ -2547,3 +2547,108 @@ body {
   }
 }
 /* End Head dtergents */
+.head-login {
+  height: 150px !important;
+}
+.head-login::before {
+  position: relative !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+.login {
+  padding: 50px 0 80px;
+}
+.login .main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.login .main-container .form-login {
+  width: 100%;
+  max-width: 700px;
+  padding: 30px;
+  background-color: #ebebeb;
+  border-radius: 8px;
+}
+.login .main-container .form-login h1 {
+  text-align: center;
+}
+.login .main-container .form-login form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.login .main-container .form-login form .input-login {
+  margin-bottom: 20px;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  border: 0;
+  outline: 0;
+  border-radius: 8px;
+}
+.login .main-container .form-login form button {
+  padding: 15px;
+  color: white;
+  border: 0;
+  border-radius: 8px;
+  font-size: 18px;
+}
+.login .main-container .form-login form .btn-main {
+  background-color: darkorange;
+  margin-bottom: 20px;
+}
+.login .main-container .form-login form .btn-google {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 15px;
+  background-color: black;
+  margin-bottom: 0px;
+}
+.login .main-container .form-login form .btn-google img {
+  width: 30px;
+  border-radius: 50%;
+}
+
+@media (max-width: 767px) {
+  .login {
+    padding: 0px 0 50px !important;
+  }
+  .login .form-login {
+    padding: 15px !important;
+  }
+  .login .form-login h1 {
+    margin: 10px 0;
+    font-size: 20px;
+  }
+  .login .form-login .input-login {
+    margin-bottom: 10px !important;
+    padding: 7px 12px !important;
+    font-size: 14px !important;
+  }
+  .login .form-login button {
+    padding: 8px !important;
+    font-size: 15px !important;
+  }
+  .login .form-login button img {
+    width: 21px !important;
+  }
+  .login .form-login .btn-main {
+    margin-bottom: 10px !important;
+  }
+}
