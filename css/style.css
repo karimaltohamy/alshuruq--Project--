@@ -366,7 +366,7 @@ body {
             align-items: flex-start;
     text-align: right;
     height: 75%;
-    padding: 35px 0 0 0;
+    padding: 0 0 0 0;
     gap: 0 !important;
   }
   .header-home .menu ul li {
@@ -2425,7 +2425,7 @@ body {
   margin-top: 5px;
 }
 
-@media (max-width: 770px) {
+@media (max-width: 767px) {
   .head-second .icon-menu {
     display: block !important;
   }
@@ -2472,7 +2472,7 @@ body {
             align-items: flex-start;
     text-align: right;
     height: 75%;
-    padding: 35px 0 0 0;
+    padding: 0 0 0 0;
     gap: 0;
   }
   .head-second .navbar .menu ul li {
