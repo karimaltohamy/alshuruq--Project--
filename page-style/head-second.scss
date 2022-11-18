@@ -37,6 +37,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 15px;
+            width: 100%;
 
             .icon-menu {
                 display: none;
@@ -54,7 +55,8 @@
                 padding: 0 10px;
                 a {
                     color: #000;
-                    font-size: 20px;
+                    font-size: 18px;
+                    text-decoration: none;
                 }
             }
 

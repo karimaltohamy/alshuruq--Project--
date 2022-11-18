@@ -7,13 +7,15 @@
         <title>عربة التسوق</title>
         <link rel="stylesheet" href="css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
+        <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Amiri:ital@1&family=Cairo:wght@400;500;600;700;800&family=Noto+Kufi+Arabic:wght@300;400;500;600;700;800;900&family=Nunito:wght@300;400;500&family=Open+Sans:wght@300;400;500&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400&family=Tajawal:wght@300&display=swap" rel="stylesheet">
     </head>
 
     <body>
         <!-- Start Head Market Pgae -->
-        <div class="head-second">
+        <div class="head-second head-market">
             <div class="navbar">
                 <div class="main-container">
                     <div class="icon-menu">
@@ -48,103 +50,59 @@
         <!-- Start Content Market Page -->
         <div class="content-market">
             <div class="main-container">
-                <div class="box-product">
-                    <div class="info-box">
-                        <div class="img">
-                            <img src="images/img13.jpg" alt="img">
-                        </div>
-    
-                        <div class="info">
-                            <h2>كيرف 1لتر <span>( مبيدات فطرية )</span></h2>
-                            <p class="price">السعر : <span>825 ج.م</span></p>
-    
-                            <div class="num-total">
-                                <span class="increment">+</span>
-                                <span class="total-num">1</span>
-                                <span class="decrement">-</span>
-                            </div>
-    
-                            <p class="total-price">
-                                الاجمالى : <span>825 ج.م</span>
-                            </p>
-                        </div>
+            <div class="cart-section">
+                <table class="table table-striped table-hover">
+                    <tr>
+                        <th>الصور</th>
+                        <th>الاسم</th>
+                        <th>السعر</th>
+                        <th class="qty">الكميه</th>
+                        <th>مسح</th>
+                    </tr>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <img src="images/img8.png" alt="">
+                            </td>
+                            <td>ديتول</td>
+                            <td>12$</td>
+                            <td class="qty">1</td>
+                            <td>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
+                                  </svg>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="images/img13.jpg" alt="">
+                            </td>
+                            <td>ديتول</td>
+                            <td>30$</td>
+                            <td class="qty">2</td>
+                            <td>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
+                                  </svg>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>  
+
+                <div class="checkout">
+                    <div class="subtotal">
+                        <span class="subtotal-text">الاجمالي</span>
+                        <span class="subtotal-number">234$</span>
                     </div>
-
-                    <div class="info-box">
-                        <div class="img">
-                            <img src="images/img12.jpg" alt="img">
-                        </div>
-    
-                        <div class="info">
-                            <h2>كيرف 1لتر <span>( مبيدات فطرية )</span></h2>
-                            <p class="price">السعر : <span>825 ج.م</span></p>
-    
-                            <div class="num-total">
-                                <span class="increment">+</span>
-                                <span class="total-num">1</span>
-                                <span class="decrement">-</span>
-                            </div>
-    
-                            <p class="total-price">
-                                الاجمالى : <span>825 ج.م</span>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="info-box">
-                        <div class="img">
-                            <img src="images/img11.jpg" alt="img">
-                        </div>
-    
-                        <div class="info">
-                            <h2>كيرف 1لتر <span>( مبيدات فطرية )</span></h2>
-                            <p class="price">السعر : <span>825 ج.م</span></p>
-    
-                            <div class="num-total">
-                                <span class="increment">+</span>
-                                <span class="total-num">1</span>
-                                <span class="decrement">-</span>
-                            </div>
-    
-                            <p class="total-price">
-                                الاجمالى : <span>825 ج.م</span>
-                            </p>
-                        </div>
-                    </div>
-
-                    <p class="total-bill">
-                        اجمالى الفاتورة : <span>5000 ج.م</span>
-                    </p>
-
-                    <div class="payment">
-                        <select id="">
-                            <option selected disabled>طريقة الدفع</option>
-                            <option>اختيار 1</option>
-                            <option>اختيار 2</option>
-                            <option>اختيار 3</option>
-                        </select>
-
-                        <select id="">
-                            <option selected disabled>عنوان الشحن</option>
-                            <option>اختيار 1</option>
-                            <option>اختيار 2</option>
-                            <option>اختيار 3</option>
-                        </select>
-
-                        <select id="">
-                            <option selected disabled>هل لديك كود خصم ؟</option>
-                            <option>اختيار 1</option>
-                            <option>اختيار 2</option>
-                            <option>اختيار 3</option>
-                        </select>
-                    </div> 
-
-                    <button class="buy">شراء</button>
+                    <a class="btn-continue">استمر في التسوق</a>
+                    <a class="btn-checkout">الدفع</a>
                 </div>
+            </div>          
             </div>
         </div>
         <!-- Start Content Market Page -->
-
+        <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
         <script>
             let btnMenu = document.querySelector(".icon-menu");
             let menu = document.querySelector(".menu");
