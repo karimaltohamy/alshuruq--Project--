@@ -4,6 +4,39 @@
     background-color: rgba(255, 166, 0, 0.9960784314);
     padding: 40px 0;
 
+    .main-title-services {
+        font-size: 50px;
+        position: relative;
+        width: fit-content;
+        margin: auto;
+        margin-bottom: 20px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 4px;
+            border-radius: 0 10px 10px 0;
+            width: 0%;
+            background-color: black;
+            z-index: 22;
+            transition: all 0.4s;
+            animation: fillWidth 1.5s infinite alternate;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 4px;
+            border-radius: 0 10px 10px 0;
+            width: 100%;
+            background-color: white;
+        }
+    }
+
     .content-boxs {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -37,6 +70,7 @@
             .title-box {
                 margin: 10px 0;
                 font-size: 23px;
+                text-align: center;
             }
 
             .p-box {
@@ -173,6 +207,10 @@
         background-color: rgba(255, 166, 0, 0.9960784314);
         padding: 20px 0;
 
+        .main-title-services {
+            font-size: 30px;
+        }
+
         .content-boxs {
             grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)) ;
             gap: 25px;
@@ -204,7 +242,7 @@
     }
 
     .section-boxs-portfolio {
-        padding: 115px 0 30px;
+        padding: 65px 0 30px;
 
         .main-title-portfolio {
             font-size: 30px !important;
@@ -265,10 +303,16 @@
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 430px) {
+    .boxs-services {
+        .content-boxs {
+            grid-template-columns: repeat(1, minmax(150px, 1fr)) !important;
+        }
+    }
+
     .section-boxs-portfolio {
         .boxs-portfolio {
-            grid-template-columns: repeat(1, minmax(150px, 1fr));
+            grid-template-columns: repeat(1, minmax(150px, 1fr)) !important;
         }
     }
 }

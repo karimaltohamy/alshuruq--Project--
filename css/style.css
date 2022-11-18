@@ -991,6 +991,32 @@ body {
   color: gray;
 }
 
+@media (max-width: 767px) {
+  .info-company {
+    padding: 115px 0 85px 0 !important;
+  }
+  .info-company .info-box {
+    -ms-grid-columns: minmax(150px, 1fr);
+    grid-template-columns: repeat(1, minmax(150px, 1fr));
+    gap: 15px !important;
+  }
+  .info-company .info-box .box {
+    min-height: 185px !important;
+    padding: 25px 15px !important;
+  }
+  .info-company .info-box .box img {
+    width: 35px;
+    height: 35px;
+  }
+  .info-company .info-box .box h3 {
+    margin-top: 15px;
+    font-size: 23px !important;
+  }
+  .info-company .info-box .box p {
+    margin-top: 7px;
+    font-size: 16px !important;
+  }
+}
 /* End Info Company */
 /* Start Products */
 .sec-products-dtergents {
@@ -1353,17 +1379,47 @@ body {
 
 /* End Products */
 @media (max-width: 600px) {
+  .sec-products-pesticides {
+    padding: 110px 0 100px 0 !important;
+  }
+  .sec-products-pesticides .search input[type=text] {
+    padding: 5px !important;
+    font-size: 16px !important;
+  }
+  .sec-products-pesticides .search input[type=button] {
+    padding: 6px 17px !important;
+    font-size: 16px !important;
+  }
   .sec-products-pesticides .products-box {
     -ms-grid-columns: 1fr 15px 1fr !important;
     grid-template-columns: repeat(2, 1fr) !important;
     gap: 15px;
+    margin-top: 25px !important;
   }
   .sec-products-pesticides .products-box .box {
     padding: 10px !important;
-    min-height: 360px !important;
+    min-height: 250px !important;
+  }
+  .sec-products-pesticides .products-box .box .img img {
+    height: 100px !important;
+  }
+  .sec-products-pesticides .products-box .box > p {
+    font-size: 19px;
+    margin: 5px 0;
+  }
+  .sec-products-pesticides .products-box .box .info {
+    gap: 10px !important;
+  }
+  .sec-products-pesticides .products-box .box .info p {
+    font-size: 14px;
+  }
+  .sec-products-pesticides .products-box .box .info span {
+    font-size: 14px;
   }
   .sec-products-pesticides .products-box .box .info button {
     width: 100% !important;
+    padding: 6px !important;
+    font-size: 16px;
   }
 }
 /* Start Section Contact Us */
@@ -1529,43 +1585,89 @@ body {
 }
 
 @media (max-width: 767px) {
+  .contact-us {
+    padding: 85px 0 0 0;
+  }
   .contact-us .row1 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
-    padding: 0 20px;
+    padding: 0 10px;
+    margin-bottom: 40px;
   }
   .contact-us .row1 h1 {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
     margin: auto;
+    font-size: 23px !important;
+    padding-bottom: 8px !important;
   }
   .contact-us .row1 h1::after {
     display: none;
   }
-  .contact-us .row1 ul {
+  .contact-us .row1 > div p {
+    margin-top: 5px;
+    font-size: 17px !important;
+    margin-bottom: 10px;
+  }
+  .contact-us .row1 > div span {
+    font-size: 17px;
+  }
+  .contact-us .row1 > div ul {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-top: 20px;
+  }
+  .contact-us .row1 > div ul img {
+    width: 30px;
   }
   .contact-us .row2 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    gap: 40px;
+    margin-bottom: 50px;
   }
   .contact-us .row2 .info-contact {
     width: 100%;
     text-align: center;
   }
+  .contact-us .row2 .info-contact h1 {
+    font-size: 22px;
+    margin-bottom: 7px !important;
+  }
+  .contact-us .row2 .info-contact ul {
+    gap: 4px;
+  }
+  .contact-us .row2 .info-contact ul li span:first-child {
+    font-size: 18px;
+  }
+  .contact-us .row2 .info-contact ul li span:last-child {
+    font-size: 17px;
+  }
   .contact-us .row2 .form {
     text-align: center;
   }
+  .contact-us .row2 .form h1 {
+    font-size: 22px;
+  }
   .contact-us .row2 .form form {
     margin: auto;
+    gap: 15px !important;
+  }
+  .contact-us .row2 .form form input:not(:last-of-type),
+.contact-us .row2 .form form textarea {
+    padding: 6px 10px !important;
+    font-size: 17px !important;
+  }
+  .contact-us .row2 .form form input[type=submit] {
+    padding: 6px 30px;
+    font-size: 17px;
   }
 }
 /* End Section Contact Us */
@@ -1739,6 +1841,12 @@ body {
     display: block;
   }
 }
+.head-details::before {
+  position: relative !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
 /* Start Content Details Product */
 .content-details-product {
   padding-bottom: 50px;
@@ -1818,10 +1926,90 @@ body {
     width: 110px !important;
   }
 }
+@media (max-width: 600px) {
+  .head-details {
+    height: 90px !important;
+  }
+  .content-details-product h2 {
+    font-size: 24px !important;
+  }
+  .content-details-product .box-product {
+    padding: 15px 30px !important;
+  }
+  .content-details-product .box-product .img img {
+    width: 200px !important;
+  }
+  .content-details-product .box-product .info h3 {
+    font-size: 20px !important;
+    margin-top: 5px !important;
+  }
+  .content-details-product .box-product .info .desc {
+    font-size: 17px !important;
+    margin-top: 4px !important;
+  }
+  .content-details-product .box-product .info > div h4 {
+    font-size: 20px !important;
+    margin-bottom: 6px !important;
+    margin-top: 10px !important;
+  }
+  .content-details-product .box-product .info > div .row {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    gap: 10px !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+  }
+  .content-details-product .box-product .info > div .row p {
+    width: -webkit-fit-content !important;
+    width: -moz-fit-content !important;
+    width: fit-content !important;
+    font-size: 18px !important;
+    margin: 7px 0 !important;
+  }
+  .content-details-product .box-product .info > div .row span {
+    font-size: 17px;
+  }
+}
 .boxs-services {
   margin: 150px 0 0;
   background-color: rgba(255, 166, 0, 0.9960784314);
   padding: 40px 0;
+}
+.boxs-services .main-title-services {
+  font-size: 50px;
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.boxs-services .main-title-services::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  border-radius: 0 10px 10px 0;
+  width: 0%;
+  background-color: black;
+  z-index: 22;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  -webkit-animation: fillWidth 1.5s infinite alternate;
+          animation: fillWidth 1.5s infinite alternate;
+}
+.boxs-services .main-title-services::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  border-radius: 0 10px 10px 0;
+  width: 100%;
+  background-color: white;
 }
 .boxs-services .content-boxs {
   display: -ms-grid;
@@ -1867,6 +2055,7 @@ body {
 .boxs-services .content-boxs .box-services .title-box {
   margin: 10px 0;
   font-size: 23px;
+  text-align: center;
 }
 .boxs-services .content-boxs .box-services .p-box {
   margin: 0;
@@ -1983,6 +2172,9 @@ body {
     background-color: rgba(255, 166, 0, 0.9960784314);
     padding: 20px 0;
   }
+  .boxs-services .main-title-services {
+    font-size: 30px;
+  }
   .boxs-services .content-boxs {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     gap: 25px;
@@ -2005,7 +2197,7 @@ body {
     font-size: 13px;
   }
   .section-boxs-portfolio {
-    padding: 115px 0 30px;
+    padding: 65px 0 30px;
   }
   .section-boxs-portfolio .main-title-portfolio {
     font-size: 30px !important;
@@ -2054,10 +2246,14 @@ body {
     margin-top: 10px;
   }
 }
-@media (max-width: 360px) {
+@media (max-width: 430px) {
+  .boxs-services .content-boxs {
+    -ms-grid-columns: (minmax(150px, 1fr))[1] !important;
+    grid-template-columns: repeat(1, minmax(150px, 1fr)) !important;
+  }
   .section-boxs-portfolio .boxs-portfolio {
-    -ms-grid-columns: (minmax(150px, 1fr))[1];
-    grid-template-columns: repeat(1, minmax(150px, 1fr));
+    -ms-grid-columns: (minmax(150px, 1fr))[1] !important;
+    grid-template-columns: repeat(1, minmax(150px, 1fr)) !important;
   }
 }
 /* Start Head dtergents */
@@ -2195,7 +2391,7 @@ body {
 }
 @media (max-width: 600px) {
   .head-second {
-    height: 275px !important;
+    height: 275px;
     padding-top: 60px !important;
   }
   .head-second::before {

@@ -37,4 +37,35 @@
         }
     }
 }
+
+@media (max-width: 767px) {
+    .info-company {
+        padding: 115px 0 85px 0 !important;
+
+        .info-box {
+            grid-template-columns: repeat(1, minmax(150px, 1fr));
+            gap: 15px !important;
+
+            .box {
+                min-height: 185px !important;
+                padding: 25px 15px !important;
+
+                img {
+                    width: 35px;
+                    height: 35px;
+                }
+
+                h3 {
+                    margin-top: 15px;
+                    font-size: 23px !important;
+                }
+
+                p {
+                    margin-top: 7px;
+                    font-size: 16px !important;
+                }
+            }
+        }
+    }
+}
 /* End Info Company */

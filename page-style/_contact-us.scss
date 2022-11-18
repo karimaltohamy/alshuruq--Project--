@@ -140,37 +140,98 @@
 
 @media (max-width: 767px) {
     .contact-us {
+        padding: 85px 0 0 0;
+
         .row1 {
             flex-direction: column;
             text-align: center;
-            padding: 0 20px;
+            padding: 0 10px;
+            margin-bottom: 40px;
+            
 
             h1 {
                 width: fit-content;
                 margin: auto;
+                font-size: 23px !important;
+                padding-bottom: 8px !important;
+
                 &::after {
                     display: none;
                 }
             }
 
-            ul {
-                justify-content: center;
+            > div {
+                p {
+                    margin-top: 5px;
+                    font-size: 17px !important;
+                    margin-bottom: 10px; 
+                }
+                
+                span {
+                    font-size: 17px;
+                }
+                
+                ul {
+                    justify-content: center;
+                    margin-top: 20px;
+
+                    img {
+                        width: 30px;
+                    }
+                }
             }
         }
 
         .row2 {
             flex-direction: column;
+            gap: 40px;
+            margin-bottom: 50px;
 
             .info-contact {
                 width: 100%;
                 text-align: center;
+
+                h1 {
+                    font-size: 22px;
+                    margin-bottom: 7px !important;
+                }
+
+                ul {
+                    gap: 4px;
+
+                    li {
+                        span:first-child {
+                            font-size: 18px;
+                        }
+
+                        span:last-child {
+                            font-size: 17px;
+                        }
+                    }
+                }
             }
 
             .form {
                 text-align: center;
+
+                h1 {
+                    font-size: 22px
+                }
                 
                 form {
                     margin: auto;
+                    gap: 15px !important;
+
+                    input:not(:last-of-type),
+                    textarea{
+                        padding: 6px 10px !important;
+                        font-size: 17px !important;
+                    }
+
+                    input[type=submit] {
+                        padding: 6px 30px;
+                        font-size: 17px;
+                    }
                 }
             }
         }
