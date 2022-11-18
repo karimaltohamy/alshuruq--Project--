@@ -21,7 +21,6 @@ html {
 body {
   margin: 0;
   font-family: "Nunito", sans-serif;
-  overflow: hidden;
 }
 
 .main-container {
@@ -360,6 +359,10 @@ body {
     padding: 5px 20px 0;
     border-bottom: 2px solid rgba(255, 166, 0, 0.9960784314);
     height: 40px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
   }
   .header-home .menu .head-menu h3 {
     font-size: 21px;
@@ -1912,6 +1915,9 @@ body {
     margin-top: 10px;
   }
 }
+.head-details {
+  height: 150px !important;
+}
 .head-details::before {
   position: relative !important;
   width: 0 !important;
@@ -2043,132 +2049,68 @@ body {
     font-size: 17px !important;
   }
 }
-/* Start Home Page */
-.header-home .login-sec .lang .info-lang {
-  left: auto !important;
+.header-home .head-contact .main-container .login-sec .info-lang {
   right: 0;
 }
-.header-home .nav-links .main-logo {
-  direction: ltr !important;
+.header-home .nav-links .main-container {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 @media (max-width: 767px) {
-  .nav-links ul {
-    left: auto !important;
-    right: -100%;
+  .header-home .nav-links .menu {
+    direction: ltr;
   }
-  .nav-links ul.open {
-    right: 0 !important;
+  .header-home .nav-links .menu .head-menu {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
-}
-/* End Home Page */
-/* Start We Are Page */
-.head-we-are .img-head {
-  direction: rtl !important;
-}
-
-@media (max-width: 991px) {
-  .head-we-are .navbar ul {
-    left: auto !important;
-    right: -100%;
-  }
-  .head-we-are .navbar ul.open {
-    right: 0 !important;
+  .header-home .nav-links .menu ul {
+    text-align: left;
   }
 }
-/* End We Are Page */
-/* Start Dtergents Page */
-.head-dtergents .img-head {
-  direction: rtl !important;
+.head-second .navbar .main-container {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
-@media (max-width: 991px) {
-  .head-dtergents .navbar ul {
-    left: auto !important;
-    right: -100%;
+@media (max-width: 767px) {
+  .head-second .navbar .menu {
+    direction: ltr;
   }
-  .head-dtergents .navbar ul.open {
-    right: 0 !important;
+  .head-second .navbar .menu .head-menu {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
-}
-/* End Dtergents Page */
-/* Start Pesticides Page */
-.head-pesticides .img-head {
-  direction: rtl !important;
-}
-
-@media (max-width: 991px) {
-  .head-pesticides .navbar ul {
-    left: auto !important;
-    right: -100%;
-  }
-  .head-pesticides .navbar ul.open {
-    right: 0 !important;
+  .head-second .navbar .menu ul {
+    text-align: left;
   }
 }
-/* End Pesticides Page */
-/* Start Contact Us Page */
-.head-contact-us .img-head {
-  direction: rtl !important;
+.sec-products-dtergents .main-container .search {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
-.contact-us .row1 h1::after {
-  right: auto !important;
-  left: 0;
+.section-services .content-services {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
-@media (max-width: 991px) {
-  .head-contact-us .navbar ul {
-    left: auto !important;
-    right: -100%;
-  }
-  .head-contact-us .navbar ul.open {
-    right: 0 !important;
-  }
+.footer .main-container .row-1 {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
-/* End Contact Us Page */
-/* Start Market Page */
-.head-market-page .img-head {
-  direction: rtl !important;
-}
-
-@media (max-width: 991px) {
-  .head-market-page .navbar ul {
-    left: auto !important;
-    right: -100%;
-  }
-  .head-market-page .navbar ul.open {
-    right: 0 !important;
-  }
-}
-/* End Market Page */
-/* Start Market Page */
-.head-market-page .img-head {
-  direction: rtl !important;
-}
-
-@media (max-width: 991px) {
-  .head-market-page .navbar ul {
-    left: auto !important;
-    right: -100%;
-  }
-  .head-market-page .navbar ul.open {
-    right: 0 !important;
-  }
-}
-/* End Market Page */
-/* Start Details Product Page */
-.head-details-product .img-head {
-  direction: rtl !important;
-}
-
-@media (max-width: 991px) {
-  .head-details-product .navbar ul {
-    left: auto !important;
-    right: -100%;
-  }
-  .head-details-product .navbar ul.open {
-    right: 0 !important;
-  }
-}
-/* End Details Product Page */

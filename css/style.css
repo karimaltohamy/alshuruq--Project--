@@ -21,7 +21,6 @@ html {
 body {
   margin: 0;
   font-family: "Nunito", sans-serif;
-  overflow: hidden;
 }
 
 .main-container {
@@ -360,6 +359,10 @@ body {
     padding: 5px 20px 0;
     border-bottom: 2px solid rgba(255, 166, 0, 0.9960784314);
     height: 40px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
   }
   .header-home .menu .head-menu h3 {
     font-size: 21px;
@@ -1912,6 +1915,9 @@ body {
     margin-top: 10px;
   }
 }
+.head-details {
+  height: 150px !important;
+}
 .head-details::before {
   position: relative !important;
   width: 0 !important;
@@ -2469,6 +2475,10 @@ body {
     height: 40px;
     padding: 5px 20px 0;
     border-bottom: 2px solid rgba(255, 166, 0, 0.9960784314);
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
   }
   .head-second .navbar .menu .head-menu h3 {
     font-size: 19px;
@@ -2514,6 +2524,7 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    text-decoration: none;
     gap: 13px;
     padding: 10px 25px;
     color: black;
