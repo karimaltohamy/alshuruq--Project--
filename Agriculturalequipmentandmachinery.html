@@ -13,7 +13,7 @@
 <body>
      <!-- Start Head Dtergents -->
      <div class="head-second">
-        <img src="images/img5.jpg" alt="img">
+        <img src="images/combine235-harvester-working-field.png" alt="img">
         <div class="navbar">
             <div class="main-container">
                 <div class="icon-menu">
@@ -67,8 +67,8 @@
 
         <div class="info-head">
             <div class="main-container">
-                <h1>عن الشركة</h1>
-                <p>الشروق شركة رائدة فى مجالات المنظفات و المبيدات الزراعية</p>
+                <h1>قسم المعدات ولالات الزراعيه</h1>
+                
             </div>
         </div>
     </div>
@@ -268,10 +268,15 @@
     <script>
         let btnMenu = document.querySelector(".icon-menu");
         let menu = document.querySelector(".menu");
+        let close = document.querySelector(".close");
 
         btnMenu.addEventListener("click", () => {
             menu.classList.toggle("open")
         })
+
+        close.addEventListener("click", () => {
+                menu.classList.remove("open")
+            })
     </script>
 </body>
 </html>

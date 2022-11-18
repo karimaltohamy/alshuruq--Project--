@@ -1013,18 +1013,18 @@ body {
 /* Start Animation */
 @-webkit-keyframes changeImg {
   from {
-    background-image: url("../images/01.png");
+    background-image: url("../images/background-web2.png");
   }
   to {
-    background-image: url("../images/0111.jpg");
+    background-image: url("../images/background-web3.png");
   }
 }
 @keyframes changeImg {
   from {
-    background-image: url("../images/01.png");
+    background-image: url("../images/background-web2.png");
   }
   to {
-    background-image: url("../images/0111.jpg");
+    background-image: url("../images/background-web3.png");
   }
 }
 @-webkit-keyframes fillWidth {
@@ -1041,6 +1041,24 @@ body {
   }
   to {
     width: 45%;
+  }
+}
+@media (max-width: 767px) {
+  @-webkit-keyframes changeImg {
+    from {
+      background-image: url("../images/backgrond-mobil.png");
+    }
+    to {
+      background-image: url("../images/background-mobil2.png");
+    }
+  }
+  @keyframes changeImg {
+    from {
+      background-image: url("../images/backgrond-mobil.png");
+    }
+    to {
+      background-image: url("../images/background-mobil2.png");
+    }
   }
 }
 /* End Animation */

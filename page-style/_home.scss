@@ -990,11 +990,11 @@
 /* Start Animation */
 @keyframes changeImg {
     from {
-        background-image: url("../images/01.png");
+        background-image: url("../images/background-web2.png");
     }
 
     to {
-        background-image: url("../images/0111.jpg");
+        background-image: url("../images/background-web3.png");
     }
 }
 
@@ -1005,6 +1005,19 @@
 
     to {
         width: 45%;
+    }
+}
+
+
+@media(max-width: 767px) {
+    @keyframes changeImg {
+        from {
+            background-image: url("../images/backgrond-mobil.png");
+        }
+    
+        to {
+            background-image: url("../images/background-mobil2.png");
+        }
     }
 }
 /* End Animation */

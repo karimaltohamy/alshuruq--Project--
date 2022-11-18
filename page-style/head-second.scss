@@ -118,6 +118,7 @@
             display: block !important;
         }
         .navbar {
+
             .menu {
                 position: fixed;
                 left: -100%;
@@ -204,6 +205,10 @@
             width: 100%;
             h1 {
                 font-size: 50px;
+            }
+
+            p {
+                font-size: 17px !important;
             }
         }
     }
