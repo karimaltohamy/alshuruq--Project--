@@ -911,8 +911,9 @@
 
                 input {
                     width: 100%;
-                    padding: 15px;
+                    padding: 13px;
                     border: none;
+                    margin-top: 6px !important;
                     
                     &:not(:last-child) {
                         border-radius: 10px;
@@ -1014,6 +1015,7 @@
 
 @media(max-width: 767px) {
     .footer {
+        padding: 18px 8px !important;
         .row-1 {
             flex-direction: column;
             gap: 0;
