@@ -192,9 +192,14 @@
             }
 
             .form {
-                input {
-                    padding: 7px !important;
+                form {
+                    gap: 20px !important;
+
+                    input {
+                        padding: 7px !important;
+                    }
                 }
+                
             }
 
             .row-2 {
