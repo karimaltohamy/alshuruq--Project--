@@ -192,6 +192,13 @@
                         color: #FFF;
                         font-size: 16px;
                         font-weight: 600;
+                        display: flex; 
+                        align-items: center; 
+                        
+                        svg {
+                            width: 20px;
+                            gap: 10px;
+                        }
                     }
                 }
 
