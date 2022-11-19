@@ -226,6 +226,37 @@ body {
 .header-home .nav-links .main-container .login {
   display: none;
 }
+.header-home .nav-links .main-container .ul-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header-home .nav-links .main-container .ul-1 .sections {
+  position: relative;
+}
+.header-home .nav-links .main-container .ul-1 .sections:hover ul {
+  display: block;
+}
+.header-home .nav-links .main-container .ul-1 .sections ul {
+  position: absolute;
+  display: block;
+  top: 27px;
+  left: -111px;
+  width: 300px;
+  background-color: white;
+  border-radius: 5px;
+  display: none;
+}
+.header-home .nav-links .main-container .ul-1 .sections ul li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3803921569);
+  padding: 10px;
+}
+.header-home .nav-links .main-container .ul-1 .sections ul li a {
+  color: black !important;
+}
+.header-home .nav-links .main-container .ul-2 {
+  display: none;
+}
 .header-home .nav-links .main-container ul {
   padding: 0;
   margin-top: 0;
@@ -369,6 +400,14 @@ body {
   }
   .header-home .menu .head-menu span svg {
     width: 25px;
+  }
+  .header-home .menu .ul-1 {
+    display: none !important;
+  }
+  .header-home .menu .ul-2 {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
   }
   .header-home .menu ul {
     -webkit-box-orient: vertical;
@@ -1013,18 +1052,18 @@ body {
 /* Start Animation */
 @-webkit-keyframes changeImg {
   from {
-    background-image: url("../images/background-web2.png");
+    background-image: url("../images/background-web3.png");
   }
   to {
-    background-image: url("../images/background-web3.png");
+    background-image: url("../images/background-web.jpg");
   }
 }
 @keyframes changeImg {
   from {
-    background-image: url("../images/background-web2.png");
+    background-image: url("../images/background-web3.png");
   }
   to {
-    background-image: url("../images/background-web3.png");
+    background-image: url("../images/background-web.jpg");
   }
 }
 @-webkit-keyframes fillWidth {
@@ -1201,7 +1240,7 @@ body {
   margin-top: 70px;
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1455,7 +1494,7 @@ body {
   margin-top: 70px;
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 25px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;

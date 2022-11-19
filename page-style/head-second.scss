@@ -50,6 +50,50 @@
                 display: none;
             }
 
+            .ul-1 {
+                display: flex;
+
+                .sections {
+                    position: relative;
+                    &:hover {
+                        ul {
+                            display: block;
+                        }
+                    }
+
+                    ul {
+                        position: absolute;
+                        display: block;
+                        top: 23px;
+                        left: -111px;
+                        width: 300px;
+                        background-color: white;
+                        border-radius: 5px;
+                        display: none;
+                        border: 1px solid silver;
+                        text-align: right;
+                        
+                        li {
+                            
+                            border-bottom: 1px solid #00000061;
+                            padding: 10px;
+
+                            a {
+                                color: black !important;
+                            }
+
+                            .active-link {
+                                color: #ffa600fe;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .ul-2 {
+                display: none;
+            }
+
             ul {
                 display: flex;
                 align-items: center;
@@ -147,6 +191,14 @@
                             width: 25px;
                         }
                     }
+                }
+
+                .ul-1 {
+                    display: none !important;
+                }
+    
+                .ul-2 {
+                    display: flex !important;
                 }
 
                 ul {
