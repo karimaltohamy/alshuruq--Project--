@@ -1341,6 +1341,9 @@ body {
     padding-left: 8px !important;
     padding-right: 8px !important;
   }
+  .sec-products-dtergents .main-container .search {
+    gap: 3px;
+  }
   .sec-products-dtergents .main-container .search input[type=text] {
     padding: 5px !important;
     font-size: 16px !important;
@@ -1593,6 +1596,9 @@ body {
 @media (max-width: 600px) {
   .sec-products-pesticides {
     padding: 110px 0 100px 0 !important;
+  }
+  .sec-products-pesticides .search {
+    gap: 3px;
   }
   .sec-products-pesticides .search input[type=text] {
     padding: 5px !important;
